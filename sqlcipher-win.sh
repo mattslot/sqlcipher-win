@@ -20,7 +20,7 @@ git clone https://github.com/sqlcipher/sqlcipher.git sqlcipher
 
 pushd sqlcipher
 
-./configure --with-crypto-lib=none --disable-tcl CFLAGS="-DSQLITE_HAS_CODEC -DSQLCIPHER_CRYPTO_OPENSSL"
+./configure --with-crypto-lib=none --disable-tcl CFLAGS="-DSQLITE_HAS_CODEC -DSQLCIPHER_CRYPTO_OPENSSL -DSQLITE_ENABLE_UPDATE_DELETE_LIMIT"
 make clean
 make sqlite3.c
 
